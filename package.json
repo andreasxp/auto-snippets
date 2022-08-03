@@ -1,0 +1,70 @@
+{
+	"name": "auto-snippets",
+	"displayName": "Auto Snippets",
+	"description": "Auto-insert text into new files",
+	"version": "0.1.0",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreasxp/auto-snippets"
+	},
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"properties": {
+				"auto-snippets.snippets": {
+					"type": "array",
+					"markdownDescription": "Mappings from file extensions to required snippets",
+					"default": [
+						{
+							"pattern": "**/*.h",
+							"snippet": "header-template"
+						},
+						{
+							"pattern": "**/*.cpp",
+							"snippet": "body-template"
+						},
+						{
+							"language": "javascript",
+							"snippet": "template"
+						}
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/micromatch": "^4.0.2",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.69.0",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.20.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"micromatch": "^4.0.5"
+	}
+}
