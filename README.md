@@ -1,7 +1,5 @@
 # Auto Snippets
-This extension automatically inserts a predefined snippet when a file is created, or an empty file is opened.
-
-This allows you to insert template classes, `#pragma once` statements or include guards, copyright comments, etc.
+Insert text or run a command when a file of a particular type is created, or an empty file is opened. Insert template classes, `#pragma once` statements or include guards, copyright comments, etc.
 
 ## Installation
 Open the Command Palette (Ctrl+P), then type in the following command:
@@ -12,8 +10,8 @@ Alternatively, install the extension directly from is [marketplace page](https:/
 
 ## Why not [`gruntfuggly.auto-snippet`](https://github.com/Gruntfuggly/auto-snippet)?
 This extension is a clone of `gruntfuggly.auto-snippet` in almost every way. The differences are:
-* This extension loads in about 14ms, while gruntfuggly's takes ~140ms;
-* This extension runs inserts all snippets matched by a file, not just the first one. This allows for complex chains of snippets.
+- This extension loads in ~14ms, while gruntfuggly's takes ~140ms;
+- This extension runs inserts all snippets matched by a file, not just the first one. This allows for complex chains of snippets.
 
 ## Configuration
 `auto-snippets.snippets` is an array of objects, each describing what should be inserted and for which files. These objects are:
@@ -37,10 +35,10 @@ The patterns are matched in order of definition. All matched patterns will be ru
 
 Auto Snippets takes snippets from your user snippets. You can add new snippets by visiting *File > Preferences > Configure User Snippets*. [More information on VS Code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
 
-## License
-This project is licensed under the GNU General Public License v3.0. See the [license file](/LICENSE.txt) for more information.
-
 ## Credits
 This extension borrows almost all of the code from [Gruntfuggly's "Auto Snippet"](https://github.com/Gruntfuggly/auto-snippet).
 
-Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/), and transformed by the author.
+Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/), and modified by the author.
+
+## License
+This project is licensed under the GNU General Public License v3.0. See the [license file](/LICENSE.txt) for more information.
