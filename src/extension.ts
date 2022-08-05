@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 
-		const mappings: Array<SnippetMapping> = vscode.workspace.getConfiguration('autoSnippet').get('snippets', []);
+		const mappings: Array<SnippetMapping> = vscode.workspace.getConfiguration('auto-snippets').get('snippets', []);
 		const filename = document.fileName;
 
 		mappings.forEach((mapping: SnippetMapping) => {
