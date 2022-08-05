@@ -4,6 +4,7 @@
 	"description": "Auto-insert text into new files",
 	"version": "0.1.0",
 	"icon": "icon.png",
+	"publisher": "andreasxp",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/andreasxp/auto-snippets"
