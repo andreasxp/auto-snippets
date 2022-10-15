@@ -2,7 +2,7 @@
 	"name": "auto-snippets",
 	"displayName": "Auto Snippets",
 	"description": "Insert text or run a command when a file of a particular type is created, or an empty file is opened.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "andreasxp",
 	"license": "GPL-3.0-only",
 	"categories": ["Snippets"],
