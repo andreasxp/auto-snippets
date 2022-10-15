@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as micromatch from 'micromatch';
+import { isMatch } from 'micromatch';
 
 type SnippetMapping = {
 	language: string;
@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		mappings.forEach((mapping: SnippetMapping) => {
 			var languageMatch = mapping.language && mapping.language === document.languageId;
-			var nameMatch = mapping.pattern && micromatch.isMatch(filename, mapping.pattern);
+			var nameMatch = mapping.pattern && isMatch(filename, mapping.pattern);
 			var regexMatch = false;
 
 			if (mapping.regex) {
